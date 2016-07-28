@@ -1,0 +1,24 @@
+<!doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>List</title>
+	<link href="/assert/css/main.css">
+	<style>
+	li{color:green}
+	</style>
+    </head>
+<body>
+<h1>List</h1>
+<p><ul>
+<li><a href="/upload">upload</a></li>
+</ul></p>
+cao
+</hr>
+<ol>
+{{range $.images}}
+<li><a href="/view?id={{.|urlquery}}">{{.|html}}</a></li>
+{{end}}
+</ol>
+</body>
+</html>
